@@ -24,7 +24,7 @@ class MainActivity: AppCompatActivity() {
 
         recyclerview.layoutManager = spannedGridLayoutManager
 
-        recyclerview.addItemDecoration(SpaceItemDecorator(left = 10, top = 10, right = 10, bottom = 10))
+        recyclerview.addItemDecoration(SpaceItemDecorator(10))
 
         val adapter = GridItemAdapter()
 

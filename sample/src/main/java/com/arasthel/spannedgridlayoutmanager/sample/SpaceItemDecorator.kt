@@ -16,6 +16,8 @@ class SpaceItemDecorator(val left: Int,
 
     constructor(rect: Rect): this(rect.left, rect.top, rect.right, rect.bottom)
 
+    constructor(space: Int): this(space, space, space, space)
+
     override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State) {
         outRect.left = this.left
         outRect.top = this.top
