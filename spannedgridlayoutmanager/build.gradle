@@ -30,6 +30,12 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    publishing {
+        singleVariant('release') {
+            withSourcesJar()
+        }
+    }
 }
 
 dependencies {
@@ -37,6 +43,7 @@ dependencies {
 }
 
 publishing {
+
     publications {
         release(MavenPublication) {
             groupId = 'com.snap-one'
