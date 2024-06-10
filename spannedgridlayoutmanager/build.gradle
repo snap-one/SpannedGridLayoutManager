@@ -31,27 +31,21 @@ android {
         jvmTarget = '1.8'
     }
 
-    publishing {
-        singleVariant('release') {
-            withSourcesJar()
-        }
-    }
 }
 
 dependencies {
     implementation libs.androidx.recyclerview
 }
 
-publishing {
+afterEvaluate {
+    publishing {
 
-    publications {
-        release(MavenPublication) {
-            groupId = 'com.snap-one'
-            artifactId = 'spannedgridlayoutmanager'
-            version = '4.0.2'
-
-            afterEvaluate {
+        publications {
+            release(MavenPublication) {
                 from components.release
+                groupId = 'com.snap-one'
+                artifactId = 'spannedgridlayoutmanager'
+                version = '4.0.3'
             }
         }
     }
