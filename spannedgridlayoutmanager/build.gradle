@@ -11,7 +11,7 @@ android {
     compileSdk 34
 
     defaultConfig {
-        minSdk 23
+        minSdk 19
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -46,7 +46,7 @@ dependencies {
             release(MavenPublication) {
                 groupId = 'com.github.snap-one'
                 artifactId = 'SpannedGridLayoutManager'
-                version = '4.0.4'
+                version = '4.0.5'
 
                 afterEvaluate {
                     from components.release
