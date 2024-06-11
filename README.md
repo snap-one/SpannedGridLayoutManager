@@ -11,10 +11,22 @@
 ## Usage
 
 Gradle dependency:
+Published using [Jitpack](https://jitpack.io/#snap-one/SpannedGridLayoutManager) 
 
+Add it in your root build.gradle at the end of repositories:
+```groovy
+	dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+Add the dependency:
 ```groovy
 dependencies {
-	implementation 'com.arasthel:spannedgridlayoutmanager:3.0.2'
+    implementation 'com.github.snap-one:SpannedGridLayoutManager:Tag'
 }
 ```
 
