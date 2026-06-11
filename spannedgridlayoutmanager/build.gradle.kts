@@ -44,7 +44,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.snap-one"
             artifactId = "SpannedGridLayoutManager"
-            version = "4.0.5"
+            version = "4.1.0"
 
             afterEvaluate {
                 from(components["release"])

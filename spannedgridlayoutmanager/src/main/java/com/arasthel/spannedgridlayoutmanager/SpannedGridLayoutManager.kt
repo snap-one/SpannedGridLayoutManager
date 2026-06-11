@@ -562,8 +562,9 @@ open class SpannedGridLayoutManager(
 
         val lowestBottom = getLowestBottom()
         val canScrollForward =
-            (lowestBottom > size) && (scroll) < (layoutEnd + lowestBottom + getPaddingEndForOrientation())
-        delta > 0
+            (lowestBottom > size) &&
+                    (scroll) < (layoutEnd + lowestBottom + getPaddingEndForOrientation()) &&
+                    delta > 0
 
         // If can't scroll forward or backwards, return
         if (!(canScrollBackwards || canScrollForward)) {
