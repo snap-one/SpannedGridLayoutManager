@@ -477,27 +477,27 @@ open class SpannedGridLayoutManager(
     // ==============================================================================================
 
     override fun computeVerticalScrollOffset(state: RecyclerView.State): Int {
-        return scroll
+        return if (orientation == Orientation.VERTICAL) scroll else 0
     }
 
     override fun computeHorizontalScrollOffset(state: RecyclerView.State): Int {
-        return scroll
+        return if (orientation == Orientation.HORIZONTAL) scroll else 0
     }
 
     override fun computeVerticalScrollExtent(state: RecyclerView.State): Int {
-        return size
+        return if (orientation == Orientation.VERTICAL) size else 0
     }
 
     override fun computeHorizontalScrollExtent(state: RecyclerView.State): Int {
-        return size
+        return if (orientation == Orientation.HORIZONTAL) size else 0
     }
 
     override fun computeVerticalScrollRange(state: RecyclerView.State): Int {
-        return computeScrollRange()
+        return if (orientation == Orientation.VERTICAL) computeScrollRange() else 0
     }
 
     override fun computeHorizontalScrollRange(state: RecyclerView.State): Int {
-        return computeScrollRange()
+        return if (orientation == Orientation.HORIZONTAL) computeScrollRange() else 0
     }
 
     private fun computeScrollRange(): Int {
