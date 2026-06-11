@@ -36,7 +36,7 @@ android {
 }
 
 dependencies {
-    implementation(libs.androidx.recyclerview)
+    api(libs.androidx.recyclerview)
 }
 
 publishing {
