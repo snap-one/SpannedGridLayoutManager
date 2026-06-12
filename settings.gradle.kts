@@ -16,8 +16,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url "https://jitpack.io"}
     }
 }
 
-include ':sample', ':spannedgridlayoutmanager'
+include(":sample", ":spannedgridlayoutmanager")

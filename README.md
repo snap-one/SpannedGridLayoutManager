@@ -1,4 +1,4 @@
-[ ![Download](https://api.bintray.com/packages/arasthel/maven/spannedgridlayoutmanager/images/download.svg) ](https://bintray.com/arasthel/maven/spannedgridlayoutmanager/_latestVersion) [![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # SpannedGridLayoutManager
 
@@ -11,22 +11,13 @@
 ## Usage
 
 Gradle dependency:
-Published using [Jitpack](https://jitpack.io/#snap-one/SpannedGridLayoutManager) 
 
-Add it in your root build.gradle at the end of repositories:
-```groovy
-	dependencyResolutionManagement {
-		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-		repositories {
-			mavenCentral()
-			maven { url 'https://jitpack.io' }
-		}
-	}
-```
-Add the dependency:
+Published to Control4's internal Artifactory (`c4-component-release-local`), which is already
+configured as a repository in the consuming Control4 projects. Add the dependency:
+
 ```groovy
 dependencies {
-    implementation 'com.github.snap-one:SpannedGridLayoutManager:Tag'
+    implementation 'com.control4:spannedgridlayoutmanager:4.1.0'
 }
 ```
 
