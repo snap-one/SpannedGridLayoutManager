@@ -36,7 +36,11 @@ pipeline {
     stages {
         stage('Publish to Artifactory') {
             steps {
-                publishGradleLibrary(module: ':spannedgridlayoutmanager', release: params.RELEASE)
+                publishGradleLibrary(
+                    module: ':spannedgridlayoutmanager',
+                    release: params.RELEASE,
+                    credentialsId: 'artifactory-publish'
+                )
             }
         }
     }
