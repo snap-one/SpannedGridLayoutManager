@@ -1,3 +1,9 @@
+> **⚠️ Archived — vendored into Phoenix.**
+> This fork is no longer maintained or published. Its source has been vendored directly into the
+> Control4 Phoenix Android app as the `:spannedgridlayoutmanager` Gradle module, where it is consumed
+> only by that app. Make any changes there. This repository is retained read-only for history and MIT
+> attribution. The Artifactory dependency described below was never published and no longer applies.
+
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # SpannedGridLayoutManager
@@ -10,16 +16,8 @@
 
 ## Usage
 
-Gradle dependency:
-
-Published to Control4's internal Artifactory (`c4-component-release-local`), which is already
-configured as a repository in the consuming Control4 projects. Add the dependency:
-
-```groovy
-dependencies {
-    implementation 'com.control4:spannedgridlayoutmanager:4.1.0'
-}
-```
+This library is vendored into the Control4 Phoenix app as the `:spannedgridlayoutmanager` Gradle module
+and is not published as an artifact. The API usage below is preserved for reference.
 
 When you create a new `SpannedGridLayoutManager` you must provide:
 
